@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src ="@drawable/Bruno_Liljefors__Räv_smyger_på_hare_1909"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Fox in the Forest\nScore Keeper"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:background="#70FFD700"
+        />
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_b"
+        android:layout_centerInParent="true"
+        android:text="Current Round Trick Counter"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:background="#70FFD700"
+        />
+
+    <LinearLayout
+        android:id="@+id/player_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_margin= "16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player A"
+            android:textSize = "20sp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp"
+            android:background="#70FFD700"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0-3 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="5 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="6 Tricks"
+            android:background="#70FFFFFF"
+             android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" 7-9 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="10-13 Tricks"
+            android:background="#70FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_margin= "16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player B"
+        android:textSize = "20sp"
+        android:layout_marginBottom="8dp"
+        android:padding="4dp"
+        android:background="#70FFD700"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="0-3 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="5 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="6 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" 7-9 Tricks"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="4dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="10-13 Tricks"
+            android:background="#70FFFFFF"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Scored"
+            android:textSize = "20sp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp"
+            android:background="#70FFD700"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Humble\n6 Points"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#70FFD700"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:text="Defeated\n1 Point\n2 Points\n3 Points"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#70FFD700"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Victorious\n6 Points"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#70FFD700"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Greedy\n0 Points"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#70FFD700"
+            android:layout_marginTop="4dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/round_tracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/round">
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New\nRound"
+            />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New\nGame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+</RelativeLayout>
