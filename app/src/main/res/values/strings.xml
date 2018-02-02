@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ScoreAppDesign</string>
+    <string name="fox_in_the_forest">Fox in the Forest</string>
+    <string name="player_a">Player A</string>
+    <string name="_0">0</string>
+    <string name="_0_3_tricks">0-3 Tricks</string>
+    <string name="_4_tricks">4 Tricks</string>
+    <string name="_5_tricks">5 Tricks</string>
+    <string name="_6_tricks">6 Tricks</string>
+    <string name="_7_9_tricks">7-9 Tricks</string>
+    <string name="_10_tricks">10+ Tricks</string>
+    <string name="player_b">Player B</string>
+    <string name="new_ngame">New Game</string>
+    <string name="good_luck">Good Luck!</string>
 </resources>
