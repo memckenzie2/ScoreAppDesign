@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.defeat2B: scoreTeamB = scoreTeamB + 2;
                 displayMsg(nameB + " a hard defeat! +2 Points");
-                displayTeamB(scoreTeamA);
+                displayTeamB(scoreTeamB);
                 break;
             case R.id.defeat3B: scoreTeamB = scoreTeamB + 3;
                 displayMsg(nameB + " a narrow defeat! +3 Points");
