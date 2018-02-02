@@ -14,21 +14,22 @@
         android:scaleType="centerCrop"
         />
 
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="Fox in the Forest Score Keeper"
-        android:textSize="24sp"
+        android:text="Fox in the Forest"
+        android:textSize="28sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
         android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
         android:padding="4dp"
-        android:background="#70FFD700"
+        android:textColor="#000000"
+        android:background="@drawable/flourish"
         />
-
-
 
     <LinearLayout
         android:id="@+id/player_a"
@@ -40,64 +41,91 @@
         android:gravity="center"
         android:layout_margin= "16dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/player_a_name"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
             android:text="Player A"
-            android:textSize = "20sp"
-            android:layout_marginBottom="8dp"
+            android:textSize = "24sp"
             android:padding="4dp"
-            android:background="#70FFD700"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/flourish_2"
             />
+
         <TextView
+            android:id="@+id/player_a_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize = "32sp"
-            android:layout_marginBottom="8dp"
+            android:textSize = "24sp"
             android:padding="4dp"
-            android:background="#70FFD700"
+            android:layout_marginBottom="4dp"
+            android:background="#95FFFDD0"
+            android:textColor="#000000"
+            android:fontFamily="cursive"
             />
 
-        <TextView
-            android:id="@+id/roundA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/player_b"
-            android:layout_centerInParent="true"
-            android:text="Current Round\nTrick Counter"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:padding="4dp"
-            android:background="#70FFD700"
+        <Button
+            android:id="@+id/humbleA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="0-3 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            />
+        <Button
+            android:id="@+id/defeat1A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="4 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            />
+        <Button
+            android:id="@+id/defeat2A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="5 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
             />
 
-        <LinearLayout
-            android:id="@+id/round_trackerA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerInParent="true"
-            >
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="+"
-                />
+        <Button
+            android:id="@+id/defeat3A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="6 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                />
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="-"
-                />
-        </LinearLayout>
+        <Button
+            android:id="@+id/victoryA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="7-9 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            />
 
+        <Button
+            android:id="@+id/greedyA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="10+ Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/player_b"
@@ -108,143 +136,112 @@
         android:layout_alignParentRight="true"
         android:gravity="center"
         android:layout_margin= "16dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Player B"
-        android:textSize = "20sp"
-        android:layout_marginBottom="8dp"
-        android:padding="4dp"
-        android:background="#70FFD700"
-        />
-
         <TextView
+            android:id="@+id/player_b_name"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="Player B"
+            android:textSize = "24sp"
+            android:padding="4dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/flourish_2"
+            />
+        <TextView
+            android:id="@+id/player_b_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize = "32sp"
-            android:layout_marginBottom="8dp"
+            android:textSize = "24sp"
             android:padding="4dp"
-            android:background="#70FFD700"
+            android:layout_marginBottom="4dp"
+            android:background="#95FFFDD0"
+            android:textColor="#000000"
+            android:fontFamily="cursive"
             />
 
-        <TextView
-            android:id="@+id/roundA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/player_b"
-            android:layout_centerInParent="true"
-            android:text="Current Round\nTrick Counter"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:padding="4dp"
-            android:background="#70FFD700"
+        <Button
+            android:id="@+id/humbleB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="0-3 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            />
+        <Button
+            android:id="@+id/defeat1B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="4 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            />
+        <Button
+            android:id="@+id/defeat2B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="5 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
             />
 
-        <LinearLayout
-            android:id="@+id/round_trackerB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerInParent="true"
-            >
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="+"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                />
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="-"
-                />
-
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/defeat3B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="6 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            />
+        <Button
+            android:id="@+id/victoryB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="7-9 Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            />
+        <Button
+            android:id="@+id/greedyB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:text="10+ Tricks"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            />
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:text="New\nGame"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/title"
+        />
 
     <TextView
-        android:id="@+id/scoring_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scoring Guide"
-        android:textSize = "20sp"
-        android:layout_marginBottom="8dp"
-        android:layout_below="@+id/player_a"
+        android:id="@+id/mssg"
+        android:layout_width="88dp"
+        android:layout_height="104dp"
+        android:text="Good Luck!"
+        android:textSize = "16sp"
         android:padding="4dp"
-        android:background="#70FFD700"
-        />
-
-    <LinearLayout
-        android:id="@+id/scoring"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/scoring_title"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#70FFD700"
-            android:gravity="center"
-            android:text="Humble\n\nDefeated\n\nVictorious\nGreedy"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0-3 Tricks\n4 Tricks\n5 Tricks\n6 Tricks\n7-9 Tricks\n10-13 Tricks"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:background="#70FFD700"
-            android:layout_marginTop="4dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6 Points\n1 Point\n2 Points\n3 Points\n6 Points\n0 Points"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:background="#70FFD700"
-            android:layout_marginTop="4dp"
-            />
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New\nRound"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New\nGame"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        />
-
-    <Button
-        android:id="@+id/rules"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Full Rules"
-        android:layout_below="@id/player_a"
-        android:layout_toRightOf="@id/scoring_title"
-        android:layout_centerInParent="true"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="@drawable/flourish_2"
+        android:layout_below="@id/reset"
+        android:layout_centerHorizontal="true"
         />
 
 
