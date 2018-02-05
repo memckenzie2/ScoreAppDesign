@@ -7,17 +7,40 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA =0;
-    int scoreTeamB=0;
+    int scoreTeamA;
+    int scoreTeamB;
     String nameB;
     String nameA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nameB = "Player B";
         nameA = "Player A";
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // call superclass to save any view hierarchy
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("scoreA", scoreTeamA);
+        savedInstanceState.putInt("scoreB", scoreTeamB);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        // Restore UI state from the savedInstanceState.
+        // This bundle has also been passed to onCreate.
+        int teamA = savedInstanceState.getInt("scoreA");
+        int teamB = savedInstanceState.getInt("scoreB");
+        scoreTeamA = teamA;
+        scoreTeamB = teamB;
+        displayTeamA(scoreTeamA);
+        displayTeamB(scoreTeamB);
     }
 
     public void resetGame(View v){
