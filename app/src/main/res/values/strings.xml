@@ -10,6 +10,7 @@
     <string name="_7_9_tricks">7-9 Tricks</string>
     <string name="_10_tricks">10+ Tricks</string>
     <string name="player_b">Player B</string>
-    <string name="new_ngame">New Game</string>
-    <string name="good_luck">Good Luck!</string>
+    <string name="new_ngame">New\nGame</string>
+    <string name="good_luck">Good\nLuck!</string>
+
 </resources>

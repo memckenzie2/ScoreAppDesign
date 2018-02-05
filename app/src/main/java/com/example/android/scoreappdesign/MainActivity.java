@@ -9,6 +9,8 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA;
     int scoreTeamB;
+    String nameB;
+    String nameA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +18,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         scoreTeamA = 0;
         scoreTeamB = 0;
+        nameB = "Player B";
+        nameA = "Player A";
+    }
+
+    public void resetGame(View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayTeamA(scoreTeamA);
+        displayTeamB(scoreTeamB);
+        displayMsg("Good Luck!");
     }
 
     public void scoreTeamA(View v){
 
         displayTeamA(scoreTeamA);
-        String nameA = "Player A";
+
         switch (v.getId()) {
             case R.id.humbleA: scoreTeamA = scoreTeamA + 6;
                 displayMsg(nameA + " was Humble! +6 Points");
@@ -50,10 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void scoreTeamB(View v){
-
-        displayTeamB(scoreTeamB);
-        String nameB = "Player B";
-        switch (v.getId()) {
+                switch (v.getId()) {
             case R.id.humbleB: scoreTeamB = scoreTeamB + 6;
                 displayMsg(nameB + " was Humble! +6 Points");
                 displayTeamB(scoreTeamB);
@@ -80,12 +89,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void resetGame(){
-        TextView scoreViewA = (TextView) findViewById(R.id.player_a_score);
-        scoreViewA.setText(String.valueOf(0));
-        TextView scoreViewB = (TextView) findViewById(R.id.player_b_score);
-        scoreViewB.setText(String.valueOf(0));
-    }
 
     public void displayTeamA(int amount){
         TextView scoreView = (TextView) findViewById(R.id.player_a_score);
@@ -98,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayMsg(String mssg){
-        TextView scoreView = (TextView) findViewById(R.id.mssg);
-        scoreView.setText(String.valueOf(mssg));
+        TextView msgView = (TextView) findViewById(R.id.mssg);
+        msgView.setText(String.valueOf(mssg));
     }
 }
