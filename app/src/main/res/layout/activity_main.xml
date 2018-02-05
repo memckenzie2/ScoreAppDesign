@@ -10,8 +10,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src ="@drawable/bruno_liljefors_1909"
         android:scaleType="centerCrop"
+        android:src ="@drawable/bruno_liljefors_1909"
         />
 
     <TextView
@@ -20,137 +20,137 @@
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="@string/fox_in_the_forest"
-        android:textSize="28sp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
         android:layout_marginTop="16dp"
+        android:background="@drawable/flourish"
+        android:fontFamily="cursive"
         android:gravity="center_horizontal"
         android:padding="4dp"
+        android:text="@string/fox_in_the_forest"
         android:textColor="#000000"
-        android:background="@drawable/flourish"
+        android:textSize="28sp"
+        android:textStyle="bold"
         />
 
     <Button
         android:id="@+id/resetButton"
-        android:layout_below="@id/title"
         android:layout_width="80dp"
         android:layout_height="48dp"
-        android:text="@string/new_ngame"
-        android:layout_margin="4dp"
+        android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
         android:background="@drawable/custom_button"
         android:onClick="resetGame"
+        android:text="@string/new_ngame"
         />
 
     <TextView
         android:id="@+id/mssg"
         android:layout_width="88dp"
         android:layout_height="104dp"
-        android:text="@string/good_luck"
-        android:textSize = "16sp"
-        android:padding="4dp"
-        android:fontFamily="cursive"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:background="@drawable/flourish_2"
         android:layout_below="@id/resetButton"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/flourish_2"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/good_luck"
+        android:textColor="#000000"
+        android:textSize = "16sp"
         />
 
     <LinearLayout
         android:id="@+id/player_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/title"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/title"
+        android:layout_margin= "16dp"
         android:gravity="center"
-        android:layout_margin= "16dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/player_a_name"
             android:layout_width="120dp"
             android:layout_height="48dp"
-            android:text="@string/player_a"
-            android:textSize = "24sp"
-            android:padding="4dp"
+            android:background="@drawable/flourish_2"
             android:fontFamily="cursive"
             android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/player_a"
             android:textColor="#000000"
-            android:background="@drawable/flourish_2"
+            android:textSize = "24sp"
             />
 
         <TextView
             android:id="@+id/player_a_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_0"
-            android:textSize = "24sp"
-            android:padding="4dp"
             android:layout_marginBottom="4dp"
             android:background="#95FFFDD0"
-            android:textColor="#000000"
             android:fontFamily="cursive"
+            android:padding="4dp"
+            android:text="@string/_0"
+            android:textColor="#000000"
+            android:textSize = "24sp"
             />
 
         <Button
             android:id="@+id/humbleA"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_0_3_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_0_3_tricks"
             />
         <Button
             android:id="@+id/defeat1A"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_4_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_4_tricks"
             />
         <Button
             android:id="@+id/defeat2A"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_5_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_5_tricks"
             />
 
         <Button
             android:id="@+id/defeat3A"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_6_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_6_tricks"
             />
 
         <Button
             android:id="@+id/victoryA"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_7_9_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_7_9_tricks"
             />
 
         <Button
             android:id="@+id/greedyA"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_10_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
+            android:text="@string/_10_tricks"
             />
 
     </LinearLayout>
@@ -160,91 +160,91 @@
         android:id="@+id/player_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/title"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:layout_margin= "16dp"
         android:gravity="center"
-        android:layout_margin= "16dp">
+        android:orientation="vertical">
         <TextView
             android:id="@+id/player_b_name"
             android:layout_width="120dp"
             android:layout_height="48dp"
-            android:text="@string/player_b"
-            android:textSize = "24sp"
-            android:padding="4dp"
+            android:background="@drawable/flourish_2"
             android:fontFamily="cursive"
             android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/player_b"
             android:textColor="#000000"
-            android:background="@drawable/flourish_2"
+            android:textSize = "24sp"
             />
         <TextView
             android:id="@+id/player_b_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_0"
-            android:textSize = "24sp"
-            android:padding="4dp"
             android:layout_marginBottom="4dp"
             android:background="#95FFFDD0"
-            android:textColor="#000000"
             android:fontFamily="cursive"
+            android:padding="4dp"
+            android:text="@string/_0"
+            android:textColor="#000000"
+            android:textSize = "24sp"
             />
 
         <Button
             android:id="@+id/humbleB"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_0_3_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_0_3_tricks"
             />
         <Button
             android:id="@+id/defeat1B"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_4_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_4_tricks"
             />
         <Button
             android:id="@+id/defeat2B"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_5_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_5_tricks"
             />
 
         <Button
             android:id="@+id/defeat3B"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_6_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_6_tricks"
             />
         <Button
             android:id="@+id/victoryB"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_7_9_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_7_9_tricks"
             />
         <Button
             android:id="@+id/greedyB"
             android:layout_width="104dp"
             android:layout_height="48dp"
-            android:text="@string/_10_tricks"
             android:layout_margin="4dp"
             android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
+            android:text="@string/_10_tricks"
             />
 
     </LinearLayout>

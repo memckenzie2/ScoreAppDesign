@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA;
-    int scoreTeamB;
+    int scoreTeamA =0;
+    int scoreTeamB=0;
     String nameB;
     String nameA;
 
@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        scoreTeamA = 0;
-        scoreTeamB = 0;
         nameB = "Player B";
         nameA = "Player A";
     }
