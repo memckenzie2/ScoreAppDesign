@@ -12,5 +12,20 @@
     <string name="player_b">Player B</string>
     <string name="new_ngame">New\nGame</string>
     <string name="good_luck">Good\nLuck!</string>
+    <string name="six_point">was Humble! +6 Points</string>
+    <string name="one_point">was horribly defeated! +1 Points</string>
+    <string name="two_point">a hard defeat! +2 Points</string>
+    <string name="three_point">a narrow defeat! +3 Points</string>
+    <string name="victory_point_b">! +6 Points</string>
+    <string name="victory_point_a">Victory for</string>
+    <string name="greedy_point_a">Don\'t be greedy,</string>
+    <string name="greedy_point_b">! No Points.</string>
+    <string name="player_a_scoring">Player A Scoring</string>
+    <string name="player_b_scoring">Player B Scoring</string>
+    <string name="game_title_fox_in_the_forest">Game Title Fox in the Forest</string>
+    <string name="message_display_good_luck">Message Display: Good Luck!</string>
+    <string name="score_announce_a">Player A Score is</string>
+    <string name="score_announce_b">Player B Score is</string>
+    <string name="mssg_display">Message Display</string>
 
 </resources>

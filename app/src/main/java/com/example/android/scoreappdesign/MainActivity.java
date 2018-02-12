@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        nameB = "Player B";
-        nameA = "Player A";
+        nameB = getString(R.string.player_b);
+        nameA = getString(R.string.player_a);
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayTeamA(scoreTeamA);
         displayTeamB(scoreTeamB);
-        displayMsg("Good Luck!");
+        displayMsg(getString(R.string.good_luck));
     }
 
     public void scoreTeamA(View v){
@@ -57,26 +57,26 @@ public class MainActivity extends AppCompatActivity {
 
         switch (v.getId()) {
             case R.id.humbleA: scoreTeamA = scoreTeamA + 6;
-                displayMsg(nameA + " was Humble! +6 Points");
+                displayMsg(nameA + getString(R.string.six_point));
                 displayTeamA(scoreTeamA);
                 break;
             case R.id.defeat1A: scoreTeamA = scoreTeamA + 1;
-                displayMsg(nameA + " was horribly defeated! +1 Points");
+                displayMsg(nameA + getString(R.string.one_point));
                 displayTeamA(scoreTeamA);
                 break;
             case R.id.defeat2A: scoreTeamA = scoreTeamA + 2;
-                displayMsg(nameA + " a hard defeat! +2 Points");
+                displayMsg(nameA + getString(R.string.two_point));
                 displayTeamA(scoreTeamA);
                 break;
             case R.id.defeat3A: scoreTeamA = scoreTeamA + 3;
-                displayMsg(nameA + " a narrow defeat! +3 Points");
+                displayMsg(nameA + getString(R.string.three_point));
                 displayTeamA(scoreTeamA);
                 break;
             case R.id.victoryA: scoreTeamA = scoreTeamA + 6;
-                displayMsg("Victory for " + nameA +"! +6 Points");
+                displayMsg(getString(R.string.victory_point_a) + nameA +getString(R.string.victory_point_b));
                 displayTeamA(scoreTeamA);
                 break;
-            case R.id.greedyA: displayMsg("Don't be greedy, "+ nameA +"! No Points.");
+            case R.id.greedyA: displayMsg(getString(R.string.greedy_point_a)+ nameA + getString(R.string.greedy_point_b));
                 displayTeamA(scoreTeamA);
                 break;
         }
@@ -85,26 +85,26 @@ public class MainActivity extends AppCompatActivity {
     public void scoreTeamB(View v){
                 switch (v.getId()) {
             case R.id.humbleB: scoreTeamB = scoreTeamB + 6;
-                displayMsg(nameB + " was Humble! +6 Points");
+                displayMsg(nameB + getString(R.string.six_point));
                 displayTeamB(scoreTeamB);
                 break;
             case R.id.defeat1B: scoreTeamB = scoreTeamB + 1;
-                displayMsg(nameB + " was defeated! +1 Point");
+                displayMsg(nameB + getString(R.string.one_point));
                 displayTeamB(scoreTeamB);
                 break;
             case R.id.defeat2B: scoreTeamB = scoreTeamB + 2;
-                displayMsg(nameB + " a hard defeat! +2 Points");
+                displayMsg(nameB + getString(R.string.two_point));
                 displayTeamB(scoreTeamB);
                 break;
             case R.id.defeat3B: scoreTeamB = scoreTeamB + 3;
-                displayMsg(nameB + " a narrow defeat! +3 Points");
+                displayMsg(nameB + getString(R.string.three_point));
                 displayTeamB(scoreTeamB);
                 break;
             case R.id.victoryB: scoreTeamB = scoreTeamB + 6;
-                displayMsg("Victory for " + nameB +"! +6 Points");
+                displayMsg(getString(R.string.victory_point_a) + nameB +getString(R.string.victory_point_b));
                 displayTeamB(scoreTeamB);
                 break;
-            case R.id.greedyB: displayMsg("Don't be greedy, "+ nameB +"! No Points.");
+            case R.id.greedyB: displayMsg(getString(R.string.greedy_point_a)+ nameB +getString(R.string.greedy_point_b));
                 displayTeamB(scoreTeamB);
                 break;
         }
@@ -114,15 +114,18 @@ public class MainActivity extends AppCompatActivity {
     public void displayTeamA(int amount){
         TextView scoreView = (TextView) findViewById(R.id.player_a_score);
         scoreView.setText(String.valueOf(amount));
+        scoreView.setContentDescription(getString(R.string.score_announce_a) + String.valueOf(amount));
     }
 
     public void displayTeamB(int amount){
         TextView scoreView = (TextView) findViewById(R.id.player_b_score);
         scoreView.setText(String.valueOf(amount));
+        scoreView.setContentDescription(getString(R.string.score_announce_b) + String.valueOf(amount));
     }
 
     public void displayMsg(String mssg){
         TextView msgView = (TextView) findViewById(R.id.mssg);
         msgView.setText(String.valueOf(mssg));
+        msgView.setContentDescription(getString(R.string.mssg_display) + String.valueOf(mssg));
     }
 }
