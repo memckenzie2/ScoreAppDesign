@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src ="@drawable/bruno_liljefors_1909"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/flourish"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/fox_in_the_forest"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/resetButton"
+
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/player_a_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:background="@drawable/custom_button"
+        android:onClick="resetGame"
+        android:text="@string/new_ngame"
+        />
+
+    <TextView
+        android:id="@+id/mssg"
+        android:layout_width="80dp"
+        android:layout_height="124dp"
+        android:layout_alignBottom="@+id/player_a_r2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/flourish_2"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/good_luck"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/player_a_name"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="76dp"
+        android:background="@drawable/flourish_2"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/player_a"
+        android:textColor="#000000"
+        android:textSize = "24sp"
+        />
+
+    <TextView
+        android:id="@+id/player_a_score"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/player_a_name"
+        android:layout_below="@id/player_a_name"
+        android:layout_marginBottom="4dp"
+        android:background="#95FFFDD0"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/_0"
+        android:textColor="#000000"
+        android:textSize = "24sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/player_a_r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/player_a_score"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/humbleA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_0_3_tricks"
+            />
+        <Button
+            android:id="@+id/defeat1A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_4_tricks"
+            />
+        <Button
+            android:id="@+id/defeat2A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_5_tricks"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_a_r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/player_a_r1"
+        android:layout_below="@id/title"
+        android:layout_marginLeft= "16dp"
+        android:layout_toRightOf="@id/player_a_r1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/defeat3A"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_6_tricks"
+            />
+
+        <Button
+            android:id="@+id/victoryA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_7_9_tricks"
+            />
+
+        <Button
+            android:id="@+id/greedyA"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamA"
+            android:text="@string/_10_tricks"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/player_b_name"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:layout_marginRight="76dp"
+        android:background="@drawable/flourish_2"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/player_b"
+        android:textColor="#000000"
+        android:textSize = "24sp"
+        />
+    <TextView
+        android:id="@+id/player_b_score"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/player_b_name"
+        android:layout_below="@id/player_b_name"
+        android:layout_marginBottom="4dp"
+        android:background="#95FFFDD0"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/_0"
+        android:textColor="#000000"
+        android:textSize = "24sp"
+        />
+    <LinearLayout
+        android:id="@+id/player_br1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/player_br2"
+        android:layout_below="@id/title"
+        android:layout_marginRight = "16dp"
+        android:layout_toLeftOf="@id/player_br2"
+        android:layout_toStartOf="@id/player_br2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/humbleB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_0_3_tricks"
+            />
+        <Button
+            android:id="@+id/defeat1B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_4_tricks"
+            />
+        <Button
+            android:id="@+id/defeat2B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_5_tricks"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_br2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/player_b_score"
+        android:layout_marginRight= "16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/defeat3B"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_6_tricks"
+            />
+        <Button
+            android:id="@+id/victoryB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_7_9_tricks"
+            />
+        <Button
+            android:id="@+id/greedyB"
+            android:layout_width="104dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/custom_button"
+            android:onClick="scoreTeamB"
+            android:text="@string/_10_tricks"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
