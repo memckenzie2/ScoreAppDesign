@@ -7,11 +7,21 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Create global variables for each teams score and team name
+     * NOTE: Long term I want to allow for dynamic names which is why I kepy team names in variables rather than just calling something from string.xml
+     */
     int scoreTeamA;
     int scoreTeamB;
     String nameB;
     String nameA;
 
+
+    /**
+     * Initializes variables for the app.
+     * Scores start at 0 for both teams.
+     * The team names are pulled from the strings.xml file
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         scoreTeamA = 0;
@@ -22,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         nameA = getString(R.string.player_a);
     }
 
+    /**
+     * Saves the scores for each team in case of change to the state such as changing screen orientation
+     */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // call superclass to save any view hierarchy
@@ -30,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt("scoreB", scoreTeamB);
     }
 
+    /**
+     * Restores the scores for each team in case of change to the state such as changing screen orientation
+     */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -43,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
         displayTeamB(scoreTeamB);
     }
 
+    /**
+     * Resets game so that all scores are 0 and message box displays generic good luck message
+     */
     public void resetGame(View v){
         scoreTeamA = 0;
         scoreTeamB = 0;
@@ -51,9 +70,11 @@ public class MainActivity extends AppCompatActivity {
         displayMsg(getString(R.string.good_luck));
     }
 
+    /**
+     * Updates the score for team A and displays a message to user to indicate what happened on button press
+     * Currently uses a switch statement to determine the number of points scored based on the id of the button that called the method
+     */
     public void scoreTeamA(View v){
-
-        displayTeamA(scoreTeamA);
 
         switch (v.getId()) {
             case R.id.humbleA: scoreTeamA = scoreTeamA + 6;
@@ -82,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Updates the score for team B and displays a message to user to indicate what happened on button press
+     * Currently uses a switch statement to determine the number of points scored based on the id of the button that called the method
+     */
     public void scoreTeamB(View v){
                 switch (v.getId()) {
             case R.id.humbleB: scoreTeamB = scoreTeamB + 6;
@@ -104,25 +129,37 @@ public class MainActivity extends AppCompatActivity {
                 displayMsg(getString(R.string.victory_point_a) + nameB +getString(R.string.victory_point_b));
                 displayTeamB(scoreTeamB);
                 break;
-            case R.id.greedyB: displayMsg(getString(R.string.greedy_point_a)+ nameB +getString(R.string.greedy_point_b));
+            case R.id.greedyB:
+                displayMsg(getString(R.string.greedy_point_a)+ nameB +getString(R.string.greedy_point_b));
                 displayTeamB(scoreTeamB);
                 break;
         }
     }
 
-
+    /**
+     * Updates the score TextView for team A with given value
+     * @param amount is the current score
+     */
     public void displayTeamA(int amount){
         TextView scoreView = (TextView) findViewById(R.id.player_a_score);
         scoreView.setText(String.valueOf(amount));
         scoreView.setContentDescription(getString(R.string.score_announce_a) + String.valueOf(amount));
     }
 
+    /**
+     * Updates the score TextView for team B with given value
+     * @param amount is the current score
+     */
     public void displayTeamB(int amount){
         TextView scoreView = (TextView) findViewById(R.id.player_b_score);
         scoreView.setText(String.valueOf(amount));
         scoreView.setContentDescription(getString(R.string.score_announce_b) + String.valueOf(amount));
     }
 
+    /**
+     * Updates the message TextView with information about scoring based on last button press or generic message for change of state
+     * @param mssg is a string with the current message
+     */
     public void displayMsg(String mssg){
         TextView msgView = (TextView) findViewById(R.id.mssg);
         msgView.setText(String.valueOf(mssg));
