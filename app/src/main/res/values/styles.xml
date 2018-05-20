@@ -8,4 +8,154 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="title_land">
+        <item name="android:layout_width">360dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/wide_margin_padding</item>
+        <item name="android:background">@drawable/flourish</item>
+        <item name="android:contentDescription">@string/game_title_fox_in_the_forest</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="reset_land">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:contentDescription">@string/new_ngame</item>
+    </style>
+
+    <style name="msg_land">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/flourish_2</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="player_label_land">
+        <item name="android:layout_width">@dimen/player_name_width</item>
+        <item name="android:layout_height">@dimen/player_name_height</item>
+        <item name="android:background">@drawable/flourish_2</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/med_font</item>
+    </style>
+
+    <style name="score_land">
+        <item name="android:layout_width">@dimen/player_score_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#95FFFDD0</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/med_font</item>
+        <item name="android:layout_marginBottom">@dimen/narrow_margin</item>
+        <item name="android:layout_marginTop">@dimen/narrow_margin</item>
+        <item name="android:layout_marginLeft">@dimen/player_score_margin</item>
+        <item name="android:layout_marginRight">@dimen/player_score_margin</item>
+    </style>
+
+    <style name="button_group_land">
+        <item name="android:layout_width">117dp</item>
+        <item name="android:layout_height">169dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="score_button">
+        <item name="android:layout_width">@dimen/score_button_width</item>
+        <item name="android:layout_height">@dimen/score_button_height</item>
+        <item name="android:layout_margin">@dimen/narrow_margin</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/wide_margin_padding</item>
+        <item name="android:background">@drawable/flourish</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:contentDescription">@string/game_title_fox_in_the_forest</item>
+    </style>
+
+    <style name="reset">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/narrow_margin</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:contentDescription">@string/new_ngame</item>
+    </style>
+
+    <style name="mssg">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">104dp</item>
+        <item name="android:layout_below">@id/resetButton</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/flourish_2</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="score_column">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_margin">@dimen/wide_margin_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="player_name">
+        <item name="android:layout_width">@dimen/player_name_width</item>
+        <item name="android:layout_height">@dimen/player_name_height</item>
+        <item name="android:background">@drawable/flourish_2</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/med_font</item>
+    </style>
+
+    <style name="score">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/narrow_margin</item>
+        <item name="android:background">#95FFFDD0</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:padding">@dimen/narrow_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/med_font</item>
+    </style>
+
+
 </resources>

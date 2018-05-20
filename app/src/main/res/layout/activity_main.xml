@@ -17,260 +17,132 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="@dimen/wide_margin_padding"
-        android:background="@drawable/flourish"
-        android:fontFamily="cursive"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/narrow_margin"
         android:text="@string/fox_in_the_forest"
-        android:textColor="@color/black"
-        android:textSize="@dimen/title_size"
-        android:textStyle="bold"
-        android:contentDescription = "@string/game_title_fox_in_the_forest"
-        />
+        style="@style/title" />
 
     <Button
         android:id="@+id/resetButton"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_below="@id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/narrow_margin"
-        android:background="@drawable/custom_button"
         android:onClick="resetGame"
         android:text="@string/new_ngame"
-        android:contentDescription ="@string/new_ngame"
-        />
+        style="@style/reset" />
 
     <TextView
         android:id="@+id/mssg"
-        android:layout_width="88dp"
-        android:layout_height="104dp"
-        android:layout_below="@id/resetButton"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/flourish_2"
-        android:fontFamily="cursive"
-        android:gravity="center"
-        android:padding="@dimen/narrow_margin"
         android:text="@string/good_luck"
-        android:textColor="@color/black"
-        android:textSize = "@dimen/small_font"
-        />
+        style="@style/mssg" />
 
     <LinearLayout
-        android:id="@+id/player_a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/title"
-        android:layout_margin= "@dimen/wide_margin_padding"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:focusable="true"
         android:contentDescription = "@string/player_a_scoring"
-        >
+        style="@style/score_column">
 
         <TextView
             android:id="@+id/player_a_name"
-            android:layout_width="@dimen/player_name_width"
-            android:layout_height="@dimen/player_name_height"
-            android:background="@drawable/flourish_2"
-            android:fontFamily="cursive"
-            android:gravity="center"
-            android:padding="@dimen/narrow_margin"
             android:text="@string/player_a"
-            android:textColor="@color/black"
-            android:textSize = "@dimen/med_font"
-            />
+            style="@style/player_name" />
 
         <TextView
             android:id="@+id/player_a_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/narrow_margin"
-            android:background="#95FFFDD0"
-            android:fontFamily="cursive"
-            android:padding="@dimen/narrow_margin"
             android:text="@string/_0"
-            android:textColor="@color/black"
-            android:textSize = "@dimen/med_font"
 
-            />
+            style="@style/score" />
 
         <Button
             android:id="@+id/humbleA"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_0_3_tricks"
             android:contentDescription = "@string/_0_3_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/defeat1A"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_4_tricks"
             android:contentDescription = "@string/_4_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/defeat2A"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_5_tricks"
             android:contentDescription = "@string/_5_tricks"
-            />
+            style="@style/score_button" />
 
         <Button
             android:id="@+id/defeat3A"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_6_tricks"
             android:contentDescription = "@string/_6_tricks"
-            />
+            style="@style/score_button" />
 
         <Button
             android:id="@+id/victoryA"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_7_9_tricks"
             android:contentDescription = "@string/_7_9_tricks"
-            />
+            style="@style/score_button" />
 
         <Button
             android:id="@+id/greedyA"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamA"
             android:text="@string/_10_tricks"
             android:contentDescription = "@string/_10_tricks"
-            />
+            style="@style/score_button" />
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:id="@+id/player_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/title"
-        android:layout_margin= "@dimen/wide_margin_padding"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:focusable="true"
         android:contentDescription = "@string/player_b_scoring"
-        >
+        style="@style/score_column">
         <TextView
             android:id="@+id/player_b_name"
-            android:layout_width="@dimen/player_name_width"
-            android:layout_height="@dimen/player_name_height"
-            android:background="@drawable/flourish_2"
-            android:fontFamily="cursive"
-            android:gravity="center"
-            android:padding="@dimen/narrow_margin"
             android:text="@string/player_b"
-            android:textColor="@color/black"
-            android:textSize = "@dimen/med_font"
-            />
+            style="@style/player_name" />
         <TextView
             android:id="@+id/player_b_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/narrow_margin"
-            android:background="#95FFFDD0"
-            android:fontFamily="cursive"
-            android:padding="@dimen/narrow_margin"
             android:text="@string/_0"
-            android:textColor="@color/black"
-            android:textSize = "@dimen/med_font"
-            />
+            style="@style/score" />
 
         <Button
             android:id="@+id/humbleB"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_0_3_tricks"
             android:contentDescription = "@string/_0_3_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/defeat1B"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_4_tricks"
             android:contentDescription = "@string/_4_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/defeat2B"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_5_tricks"
             android:contentDescription = "@string/_5_tricks"
-            />
+            style="@style/score_button" />
 
         <Button
             android:id="@+id/defeat3B"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_6_tricks"
             android:contentDescription = "@string/_6_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/victoryB"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_7_9_tricks"
             android:contentDescription = "@string/_7_9_tricks"
-            />
+            style="@style/score_button" />
         <Button
             android:id="@+id/greedyB"
-            android:layout_width="@dimen/score_button_width"
-            android:layout_height="@dimen/score_button_height"
-            android:layout_margin="@dimen/narrow_margin"
-            android:background="@drawable/custom_button"
             android:onClick="scoreTeamB"
             android:text="@string/_10_tricks"
             android:contentDescription = "@string/_10_tricks"
-            />
+            style="@style/score_button" />
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

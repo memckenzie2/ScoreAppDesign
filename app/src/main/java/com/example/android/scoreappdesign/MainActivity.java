@@ -1,7 +1,7 @@
 package com.example.android.scoreappdesign;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
      * @param amount is the current score
      */
     public void displayTeamA(int amount){
-        TextView scoreView = (TextView) findViewById(R.id.player_a_score);
+        TextView scoreView = findViewById(R.id.player_a_score);
         scoreView.setText(String.valueOf(amount));
         scoreView.setContentDescription(getString(R.string.score_announce_a) + String.valueOf(amount));
     }
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
      * @param amount is the current score
      */
     public void displayTeamB(int amount){
-        TextView scoreView = (TextView) findViewById(R.id.player_b_score);
+        TextView scoreView = findViewById(R.id.player_b_score);
         scoreView.setText(String.valueOf(amount));
         scoreView.setContentDescription(getString(R.string.score_announce_b) + String.valueOf(amount));
     }
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
      * @param mssg is a string with the current message
      */
     public void displayMsg(String mssg){
-        TextView msgView = (TextView) findViewById(R.id.mssg);
+        TextView msgView = findViewById(R.id.mssg);
         msgView.setText(String.valueOf(mssg));
         msgView.setContentDescription(getString(R.string.mssg_display) + String.valueOf(mssg));
     }

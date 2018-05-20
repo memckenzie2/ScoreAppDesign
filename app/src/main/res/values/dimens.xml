@@ -8,6 +8,7 @@
     <dimen name="med_font">24sp</dimen>
     <dimen name="wide_margin_padding">16dp</dimen>
     <dimen name="player_name_width">120dp</dimen>
+    <dimen name="player_score_width">100dp</dimen>
+    <dimen name="player_score_margin">10dp</dimen>
     <dimen name="player_name_height">48dp</dimen>
-    <dimen name="land_margin">76dp</dimen>
 </resources>

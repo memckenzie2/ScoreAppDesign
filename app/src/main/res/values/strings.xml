@@ -3,11 +3,11 @@
     <string name="fox_in_the_forest">Fox in the Forest</string>
     <string name="player_a">Player A</string>
     <string name="_0">0</string>
-    <string name="_0_3_tricks">0-3 Tricks</string>
+    <string name="_0_3_tricks">0–3 Tricks</string>
     <string name="_4_tricks">4 Tricks</string>
     <string name="_5_tricks">5 Tricks</string>
     <string name="_6_tricks">6 Tricks</string>
-    <string name="_7_9_tricks">7-9 Tricks</string>
+    <string name="_7_9_tricks">7–9 Tricks</string>
     <string name="_10_tricks">10+ Tricks</string>
     <string name="player_b">Player B</string>
     <string name="new_ngame">New\nGame</string>
@@ -23,7 +23,6 @@
     <string name="player_a_scoring">Player A Scoring</string>
     <string name="player_b_scoring">Player B Scoring</string>
     <string name="game_title_fox_in_the_forest">Game Title Fox in the Forest</string>
-    <string name="message_display_good_luck">Message Display: Good Luck!</string>
     <string name="score_announce_a">Player A Score is</string>
     <string name="score_announce_b">Player B Score is</string>
     <string name="mssg_display">Message Display</string>
